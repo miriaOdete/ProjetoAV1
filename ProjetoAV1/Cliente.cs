@@ -8,11 +8,10 @@ namespace ProjetoAV1
 {
     public class Cliente
     {
-        public string Nome { get; set; }
-        public int Idade { get; set; }
-        public string Endereco { get; set; }
-
-        public int Telefone { get; set; }
+        public string Nome;
+        public int Idade;
+        public string Endereco;
+        public int Telefone;
 
         public Cliente(string nome, int idade, string endereco, int telefone)
         {
