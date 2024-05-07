@@ -85,8 +85,8 @@ namespace TestProjeto
                 {
                     Console.SetOut(sw);
                     cliente.ExibirDetalhes();
-                    string expectedOutput = $"Nome: {nome}, Idade: {idade}, Endereco: {endereco}, Telefone: {telefone}{Environment.NewLine}";
-                    Assert.AreEqual(expectedOutput, sw.ToString());
+                    string saidaEsperada = $"Nome: {nome}, Idade: {idade}, Endereco: {endereco}, Telefone: {telefone}{Environment.NewLine}";
+                    Assert.AreEqual(saidaEsperada, sw.ToString());
                 }
             }
 
