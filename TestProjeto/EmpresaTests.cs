@@ -9,17 +9,17 @@ namespace TestProjeto
 
         public void TestContratar()
         {
-            // Arrange
+            
             string nomeEmpresa = "Empresa ABC";
             Funcionario empresa = new Funcionario(nomeEmpresa, 0, "000.000.000-00");
             string nomeFuncionario = "João";
             int idadeFuncionario = 30;
             string cpfFuncionario = "111.111.111-11";
 
-            // Act
+            
             empresa.Contratar(nomeFuncionario, idadeFuncionario, cpfFuncionario);
 
-            // Assert
+            
             Assert.AreEqual(1, empresa.Funcionarios.Count);
             Assert.AreEqual(nomeFuncionario, empresa.Funcionarios[0].Nome);
             Assert.AreEqual(idadeFuncionario, empresa.Funcionarios[0].Idade);
@@ -29,7 +29,7 @@ namespace TestProjeto
         [TestMethod]
         public void TestDemitir()
         {
-            // Arrange
+            
             string nomeEmpresa = "Empresa XYZ";
             Funcionario empresa = new Funcionario(nomeEmpresa, 0, "000.000.000-00");
             string nomeFuncionario = "Maria";
@@ -38,10 +38,10 @@ namespace TestProjeto
             Funcionario funcionario = new Funcionario(nomeFuncionario, idadeFuncionario, cpfFuncionario);
             empresa.Funcionarios.Add(funcionario);
 
-            // Act
+            
             empresa.Demitir(funcionario);
 
-            // Assert
+            
             Assert.AreEqual(0, empresa.Funcionarios.Count);
 
 
