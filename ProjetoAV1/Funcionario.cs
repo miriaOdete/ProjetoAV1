@@ -8,10 +8,10 @@ namespace ProjetoAV1
 {
     public class Funcionario
     {
-        public string Nome { get; set; }
-        public int Idade { get; set; }
-        public string CPF { get; set; }
-        public List<Funcionario> Funcionarios { get; set; }
+        public string Nome;
+        public int Idade;
+        public string CPF;
+        public List<Funcionario> Funcionarios;
 
         public Funcionario(string nome, int idade, string cpf)
         {
